@@ -1,5 +1,6 @@
 from django.urls import path
 from .views import Posts, GetPost
+
 urlpatterns = [
     path('', Posts.as_view()),
     path('get', GetPost.as_view()),
